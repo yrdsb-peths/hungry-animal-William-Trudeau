@@ -37,5 +37,6 @@ target2.x=0
 target2.y=0
 version=3.0.0
 width=1518
+world.lastInstantiated=MyWorld
 xPosition=0
 yPosition=0
