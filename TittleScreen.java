@@ -17,10 +17,11 @@ public class TittleScreen extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        
+
         addObject(titleLabel, getWidth()/2, getHeight()/2);
+        prepare();
     }
-    
+
     /*
      * The main world act loop.
      */
@@ -32,5 +33,19 @@ public class TittleScreen extends World
             MyWorld gameWorld = new MyWorld();
             Greenfoot.setWorld(gameWorld);
         }
+    }
+    
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
+        Elephant elephant = new Elephant();
+        addObject(elephant,495,92);
+        Label label = new Label("Use <-- and --> to Move", 40);
+        addObject(label,190,30);
+        Label label2 = new Label("Press <space> to Start", 40);
+        addObject(label2,187,70);
     }
 }
