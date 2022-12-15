@@ -1,16 +1,16 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Food for our elephant.
+ * Special food for elephant.
  * 
- * @author William Wnag
+ * @author William Wang
  * @version 1.0.0
  */
-public class Apple extends Actor
+public class Banana extends Actor
 {
     int speed = 1;
     /**
-     * Act - do whatever the Apple wants to do. This method is called whenever
+     * Act - do whatever the Banana wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
@@ -27,11 +27,5 @@ public class Apple extends Actor
             world.gameOver();
             world.removeObject(this);
         }
-    }
-    
-    public void setSpeed(int spd)
-    {
-        speed = spd;
-        
-    }
+    }        
 }
