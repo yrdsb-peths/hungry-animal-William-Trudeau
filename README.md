@@ -1,9 +1,17 @@
-# Hungry Animal Tutorial
-This is the README.md file.
-Change this file to show your intended audience what you want them to see.
+# Hungry Elephant
 
-You can use **Markdown** syntax to format this file to do things like **bold** or *italicize* text.
-[Markdown basics](https://www.markdownguide.org/getting-started/)
+**New Features & Gameplay**
+TittleScreen
+- Make the UI look more understandble.
+- Press <Tab> key can view the guide of the game.
+Guide
+- Beautiful and clear introduction of gameplay.
+- Press <Q> key can back to TittleScreen.
+Banana
+- Every 3 apple elephant ate will spawn a Banana.
+- Every catch of banana will give player one health. 
+- Each miss of apple will take away one health.
+- Each health can save player once.
+- Scoreboard to record player's health.
+- Game over if health to 0. Then player can't control the elephant anymore.
 
-The new Features
-Press space again will reset the score and continue the game.
