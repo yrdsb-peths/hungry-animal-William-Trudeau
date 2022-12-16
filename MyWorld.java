@@ -10,6 +10,7 @@ public class MyWorld extends World
 {
     public int score = 0;
     Label scoreLabel;
+    Label healthLabel;
     int level = 1;
     public static int health = 1;
     /**
@@ -27,7 +28,11 @@ public class MyWorld extends World
         
         // Create a label
         scoreLabel = new Label(0, 80);
-        addObject(scoreLabel, 50, 50);
+        addObject(scoreLabel, 550, 50);
+        
+        // Create a health label
+        healthLabel = new Label("\u2764 " + 1,80);
+        addObject(healthLabel,50, 50);
         
         createApple();
     }
@@ -40,6 +45,7 @@ public class MyWorld extends World
         Label gameOverLabel = new Label("Game Over", 100);
         addObject(gameOverLabel, 300, 200); 
     }
+    
     /**
      * Increase score
      */
@@ -67,11 +73,25 @@ public class MyWorld extends World
     }
     
     /**
-     * Reduce the health when you miss apple.
+     * Create a new banana at random location at top of screen.
      */
-    public void reduceHealth()
+    public void createBanana()
     {
-        health -= 1;
+        Banana banana = new Banana();
+        int x = Greenfoot.getRandomNumber(600);
+        int y = 0;
+        addObject(banana, x, y);
+    }
+    
+    /**
+     * Spawn a banana every 3 apple ate.
+     */
+    public void banana()
+    {
+        if(score % 3 == 0)
+        {
+            createBanana();
+        }
     }
 }    
 

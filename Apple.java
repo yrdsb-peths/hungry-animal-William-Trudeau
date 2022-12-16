@@ -27,6 +27,7 @@ public class Apple extends Actor
         {
             world.removeObject(this);
             MyWorld.health -= 1;
+            world.healthLabel.setValue("\u2764"+MyWorld.health);
             if(MyWorld.health == 0)
             {
                 world.gameOver();
@@ -42,6 +43,5 @@ public class Apple extends Actor
     public void setSpeed(int spd)
     {
         speed = spd;
-        
     }
 }

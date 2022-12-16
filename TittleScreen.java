@@ -33,6 +33,11 @@ public class TittleScreen extends World
             MyWorld gameWorld = new MyWorld();
             Greenfoot.setWorld(gameWorld);
         }
+        if(Greenfoot.isKeyDown("tab"))
+        {
+            Guide guide = new Guide();
+            Greenfoot.setWorld(guide);
+        }
     }
     
     /**
@@ -47,5 +52,7 @@ public class TittleScreen extends World
         addObject(label,178,30);
         Label label2 = new Label("Press <space> to Start", 40);
         addObject(label2,185,70);
+        Label label3 = new Label("<TAB> to view guide", 35);
+        addObject(label3,295,250);
     }
 }
