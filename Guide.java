@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Title Screen
+ * Guide
  * 
  * @author William Wang
  * @version 1.0.0
@@ -10,7 +10,7 @@ public class Guide extends World
 {
     Label titleLabel = new Label("Hungry Elephant", 60);
     /**
-     * Constructor for objects of class TittleScreen.
+     * Constructor for objects of class Guide.
      * 
      */
     public Guide()
@@ -23,7 +23,7 @@ public class Guide extends World
     }
 
     /*
-     * The main world act loop.
+     * The main world act loop. Q will sent player back to tittle screen.
      */
     public void act()
     {

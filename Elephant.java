@@ -65,6 +65,7 @@ public class Elephant extends Actor
     public void act()
     {
         // Add your action code here.
+        // The direction elephant will move. Player can't control if game is over.
         if(Greenfoot.isKeyDown("left") && MyWorld.health > 0)
         {
             move(-2);
@@ -76,7 +77,7 @@ public class Elephant extends Actor
             facing = "right";
         }
         
-        // Remove apple if elephant eats it.
+        // Remove apple and banana if elephant eats it.
         eat();
         
         //Animate the elephant
@@ -84,7 +85,7 @@ public class Elephant extends Actor
     }
     
     /**
-     * Eat the apple and spawn new apple if an apple is eaten.
+     * Eat the apple and spawn new apple if an apple is eaten. Give one health if an banana is eaten.
      */
     public void eat()
     {

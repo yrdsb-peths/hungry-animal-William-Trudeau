@@ -33,6 +33,7 @@ public class TittleScreen extends World
             MyWorld gameWorld = new MyWorld();
             Greenfoot.setWorld(gameWorld);
         }
+        // View the guide by pressing the tab key.
         if(Greenfoot.isKeyDown("tab"))
         {
             Guide guide = new Guide();

@@ -84,7 +84,7 @@ public class MyWorld extends World
     }
     
     /**
-     * Spawn a banana every 3 apple ate.
+     * Check and Spawn a banana every 3 apple ate.
      */
     public void banana()
     {
