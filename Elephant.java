@@ -65,12 +65,12 @@ public class Elephant extends Actor
     public void act()
     {
         // Add your action code here.
-        if(Greenfoot.isKeyDown("left"))
+        if(Greenfoot.isKeyDown("left") && MyWorld.health > 0)
         {
             move(-2);
             facing = "left";
         }
-        else if(Greenfoot.isKeyDown("right"))
+        else if(Greenfoot.isKeyDown("right") && MyWorld.health > 0)
         {
             move(2);
             facing = "right";

@@ -11,6 +11,7 @@ public class MyWorld extends World
     public int score = 0;
     Label scoreLabel;
     int level = 1;
+    public static int health = 1;
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -37,7 +38,7 @@ public class MyWorld extends World
     public void gameOver()
     {
         Label gameOverLabel = new Label("Game Over", 100);
-        addObject(gameOverLabel, 300, 200);
+        addObject(gameOverLabel, 300, 200); 
     }
     /**
      * Increase score
@@ -63,6 +64,14 @@ public class MyWorld extends World
         int x = Greenfoot.getRandomNumber(600);
         int y = 0;
         addObject(apple, x, y);
+    }
+    
+    /**
+     * Reduce the health when you miss apple.
+     */
+    public void reduceHealth()
+    {
+        health -= 1;
     }
 }    
 

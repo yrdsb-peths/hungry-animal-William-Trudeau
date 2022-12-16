@@ -22,10 +22,20 @@ public class Apple extends Actor
         
         // Remove apple and draw game over when apple gets to bottom
         MyWorld world = (MyWorld) getWorld();
-        if(getY() >= world.getHeight())
+
+        if(getY() >= world.getHeight() && MyWorld.health > 0)
         {
-            world.gameOver();
             world.removeObject(this);
+            MyWorld.health -= 1;
+            if(MyWorld.health == 0)
+            {
+                world.gameOver();
+                world.removeObject(this);	
+            }
+            else
+            {
+                world.createApple();
+            }
         }
     }
     
