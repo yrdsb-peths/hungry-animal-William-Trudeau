@@ -1,4 +1,4 @@
-# Hungry Elephant
+# Hungry Elephant - William Wang
 
 **New Features & Gameplay**
 
